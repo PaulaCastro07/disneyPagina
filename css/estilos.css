@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Infant', serif;
+}
+
+:root{
+    --ColorCeleste:#69a4fb;
+    --ColorMasCeleste:#1c30f4;
+    --ColorAzul:rgb(3, 35, 123);
+    --ColorMasAzul:rgb(10,15,50);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.icono-menu{
+    margin: 40px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.icono-menu img{
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+
+.contenedorMenu{
+    background: linear-gradient(var(--ColorMasAzul),var(--ColorAzul), rgb(35, 35, 255));
+    box-shadow: 2px 0px 5px 2px rgb(42, 42,42);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  1s ;
+}
+
+.active{
+    transform: translate(-800px);
+}
+
+.opacity{
+    
+    transition: 1s;
+}
+
+.contenedorMenu ul{ 
+
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.contenedorMenu a{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    
+}
+
+.contenedorMenu a:hover{
+    background-color: rgba(255, 255, 255, 0.637);
+    color: black;
+}
+
+
+
+.seccionInformacion{
+    margin: 20px -15px;
+    color: rgb(0, 90, 169);
+    text-align: center;
+    width: 100%;
+
+}
+
+.contenedorInformacion{
+    
+    width: 100%;
+    background-color: var(--ColorAzul);
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 0.5fr 1fr / repeat(3, 30%);
+    grid-template-areas: 
+    "imagen imagen imagen"
+    "texto texto texto";
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    
+    
+}
+
+.card img{
+
+    width: 100%;
+    grid-area: imagen;
+    border-radius: 15px;
+    transition: 2s;
+}
+
+
+.card p{
+    
+    padding: 8px;
+    text-align: left;
+    color: #2389ff;
+    background-color: rgba(255, 255, 255, 0.776);
+    grid-area: texto;
+    height: 200px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 2s;
+    font-size: 90%;
+    overflow: hidden auto;
+}
+
+.card i{
+
+    font-size: 20px;
+    color: #040cb1;
+}
+
+/*.contenedorInformacion:hover .card img{
+    
+    width: 380px;
+    transition: 2s;
+    box-shadow: 2px 2px 10px #0077ff;
+}
+
+.contenedorInformacion:hover .card p{
+    
+    margin: -265px 30px;
+    transition: 2s;
+    background-color: rgba(255, 255, 255, 0.897);
+    box-shadow: 2px 2px 15px #0077ff;
+   
+}*/
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    
+
+    .icono-menu{
+        margin: 15px;
+        position: absolute;
+        display:inline-flex;
+    }
+    
+    .contenedorMenu{
+        background: linear-gradient(var(--ColorMasAzul),var(--ColorAzul));
+        width: 100%;
+        height: 100px;
+    
+    }
+
+    .active{
+        transform: translate(0px);
+    }
+      
+    .contenedorMenu ul{ 
+    
+        justify-content: space-evenly;
+        display: flex;
+        list-style: none;
+    }
+    
+    .contenedorMenu a{
+        
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+        text-decoration: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: -70px 0;
+        
+    }
+    
+    .contenedorMenu a:hover{
+        background-color: rgba(255, 255, 255, 0.637);
+        color: black;
+        border-radius: 10px;
+       
+    }
+
+
+}
