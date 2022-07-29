@@ -203,30 +203,64 @@ header{
     
     width: 100%;
     margin: -70px auto 20px;
-    border: 1px solid black;
+   
 }
 
 
+.pieDePagina{
+
+    height: 20%;
+    margin-top: 20px;
+    background-color: rgb(0, 0, 70);
+}
+
+.pieDePagina h2{
+    color: #0077ff;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+.pieDePagina span{
+    font-size: 10px;
+    padding: 5px;
+}
+
+.pieDePagina ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+   flex-wrap: wrap;
+ }
+
+ .pieDePagina a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    margin: 6px;
+    
+    
+}
+.pieDePagina a:hover{
+
+    color: var(--ColorCeleste);
+
+}
 
 
-
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     
 
     .icono-menu{
-        margin: 28px 20px 20px 5px;
-        position:absolute;
-        display: block;
-        padding: 5px;
+        
+        display: none;
+       
     }
     
-    .icono-menu img{
-        vertical-align: top;
-        width: 40px;
-       margin: 10% 100%;
-        cursor:auto;
-    }
-
+    
     .contenedorMenu{
         
         width: 100%;
@@ -240,7 +274,7 @@ header{
       
     .contenedorMenu ul{ 
     
-        justify-content: space-evenly;
+        justify-content: space-around;
         display: flex;
         list-style: none;
         background-color: rgb(255, 255, 255);
@@ -292,7 +326,7 @@ header{
         overflow: hidden auto;
         margin: 10px 8px;
         filter: blur(5px);
-        height: 50%;
+        height: 250px;
     }
 
     
@@ -317,9 +351,8 @@ header{
     }
 
     .carrusel{
-        height: 660px;
+        
         width: 100%;
-        margin: -30px auto 70px;
-
+        margin: -30px auto 10px;
     }
 }
