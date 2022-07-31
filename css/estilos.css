@@ -254,8 +254,8 @@ header{
     
 }
 @keyframes anim {
-    from { background-color: var(--ColorCeleste)}
-    to { background-color: rgb(237, 97, 255)}   
+    from { background-color: var(--ColorMasAzul)}
+    to { background-color: #2d75b9}   
 }
 
 .contenedorPaquetes{
