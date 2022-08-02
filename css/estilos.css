@@ -8,6 +8,13 @@ body{
     background: linear-gradient(var(--ColorMasAzul),var(--ColorAzul));
 }
 
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+  }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -191,6 +198,92 @@ header{
    
 }
 
+/*Seccion formulario*/
+
+.seccionFormulario{
+
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.seccionFormulario > h2{
+   
+    color: #c7e1fe;
+    margin-top: 50%;
+    font-size: 15px;
+}
+
+.formulario{
+
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    margin: 8px;
+    color:var(--ColorMasAzul);
+    background-color: #ffffff;
+    border-radius:10px ;
+  
+}
+.formulario h2{
+    font-size: 100%;
+}
+
+.elemento{
+    
+    margin: 8% auto ;
+   
+}
+
+.elemento label{
+    font-weight: bold;
+    font-size: 70%;
+   
+}
+
+.elemento input{
+
+    width: 90%;
+    height: 20px;
+    background-color: #69a4fb;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 70%;
+    padding: 2%;
+    
+}
+
+.elemento input[type="checkbox"]{
+   
+   width: auto;
+   height: auto;
+   vertical-align: bottom;
+}
+
+.elemento input[type="submit"]{
+    width: auto;
+    height: auto;
+    border: 3px solid #5566ff;
+    box-shadow: 1px 1px 15px rgb(22, 0, 130);
+}
+
+.elemento input[type="submit"]:hover{
+   
+    border: 3px solid #3c4ffa;
+    box-shadow: 2px 2px 15px rgb(10, 0, 57);
+    color: #3700ff;
+    cursor: pointer;
+}
+
+.elemento .mensaje{
+    width: 90%;
+    height: 90px;
+    margin: auto;
+}
+
+
 /* pie de pagina - footer */
 .pieDePagina{
 
@@ -241,21 +334,24 @@ header{
     
     width: 100%; 
     margin-top: -10%;
-    animation: anim 10s infinite;
+    
+    
 }
 
 
 
 .paquetes h3{
-    font-size: 12px;
+    font-size: 60%;
     text-align: center;
     margin: 15px;
     padding: 2%;
-    
+    animation: anim 10s infinite;
 }
+
 @keyframes anim {
-    from { background-color: var(--ColorMasAzul)}
-    to { background-color: #2d75b9}   
+    from { color: var(--ColorMasAzul)}
+    to { color: #c7e1fe}  
+   
 }
 
 .contenedorPaquetes{
@@ -265,6 +361,8 @@ header{
     animation: EntrarIzquierda .8s ease;
     align-items: center;
     justify-content: center;
+    
+    
 }
 
 @keyframes EntrarIzquierda{
@@ -281,21 +379,21 @@ header{
 .cardPaquete{
 
     box-shadow:2px 2px 10px black;
-    height: 190px;
+    height: 160px;
     width: 27%;
     border-radius: 5px;
     background-color: white;
-    
     margin: 2%;
     overflow: hidden;
     cursor: pointer;
+  
     
 }
 
 .cardPaquete:hover{
 
     box-shadow:1px 1px 10px rgb(255, 255, 255);
-    height: 300px;
+    height: 100%;
 }
 
 .cardImagen img{
@@ -311,7 +409,7 @@ header{
 
 .cardTexto h2{
 
-    font-size: 10px;
+    font-size: 50%;
     text-align: center;
    
 }
@@ -320,9 +418,9 @@ header{
 
 .cardTexto ul li{
     
-    margin-top: 12px;
+    margin-top: 8%;
     color: rgb(0, 0, 0);
-    font-size: 8px;
+    font-size: 45%;
     text-align: center;
     padding: 0% 3%;
     
@@ -454,6 +552,75 @@ header{
         margin: -30px auto 10px;
     }
 
+    .cardPaquete{
+
+        height: 360px;
+        width: 20%;
+   
+    }
+
+    .cardPaquete:hover{
+
+        height: 100%;
+    }
+
+    
+    .cardTexto h2{
+    
+        font-size: 100%;
+    }
+    
+    
+    
+    .cardTexto ul li{
+        
+        font-size: 85%;
+        
+    }
+    
+    
+    .cardTexto ul li a{
+    
+        font-size: 15px; 
+      
+    }
+
+    .paquetes h3{
+        font-size: 100%;
+        
+    }
+   
+
+
+    .seccionFormulario{
+
+        height: 600px;
+        justify-content: center;
+    }
+    
+    .formulario{
+    
+        width: 25%;
+    }
+    
+    .elemento{
+    
+        margin: 5% auto ;
+       
+    }
+
+    .formulario h2{
+        font-size: 140%;
+    }
+    
+    .seccionFormulario > h2{
+   
+        color: #c7e1fe;
+        margin-top: 10%;
+        font-size: 20px;
+        padding: 8%;
+    }
+    
     .pieDePagina{
 
         height: 120px;
