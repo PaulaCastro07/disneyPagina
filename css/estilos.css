@@ -78,6 +78,7 @@ html {
     padding: 10px 50px;
     cursor: pointer;
     
+    
 }
 
 .contenedorMenu a:hover{
@@ -276,27 +277,17 @@ header{
 
 /*  */
 .formuImagenes{
-    margin-top: 25%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    margin: auto;
     justify-content: center;
-    width: 100%;
-   
-}
-.formuImagenes img{
-    width: 42%;
-    margin: 20px 5px;
-    border-radius:10% ;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.formuImagenes img:hover{
-    width: 46%;
-    box-shadow: 0px 0px 15px white;
     
 }
+
+.formuImagenes img{
+    width: 100%;
+   align-items: center;
+   display: none;
+}
+
 
 /* pie de pagina - footer */
 .pieDePagina{
@@ -617,14 +608,25 @@ header{
     .seccionFormulario{
 
 
-        justify-content:flex-start;
+        justify-content:center;
         display: flex;
     
     }
+    .elemento label{
+        
+        font-size: 150%;
+   
+    }
     
+    .elemento input[type="submit"]{
+         
+    
+          font-size: 30px;
+        
+    }
     .formulario{
     
-        width: 30%;
+        width: 70%;
         height: 80%;
         margin:5%;
     }
@@ -636,15 +638,20 @@ header{
     }
 
     .formulario h2{
-        font-size: 140%;
+        font-size: 200%;
     }
     
     .formuImagenes{
-        margin-top: auto;
-       
+        margin: auto;
+        
+        
     }
+    
     .formuImagenes img{
-        width: 38%;
+        width: 60%;
+       border-radius: 10%;
+       display: block;
+       margin: 0 20%;
     }
    
     .pieDePagina{
